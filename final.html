@@ -3,68 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
-    <title>Final</title>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./final.css">
 </head>
 
 <body>
-    <nav>
-        <h3>Holz Films</h3>
-        <ul>
-            <li>
-                <span>Opções de Filme</span>
-                <input type="text" placeholder="Informe o nome do filme">
-                <button>Pesquisar</button>
-            </li>
-        </ul>
-    </nav>
-
-
-    <section id="filmes">
-        <h2>Descrição</h2>
-
-        <div>
-            <img src="https://br.web.img3.acsta.net/pictures/18/04/24/16/26/5909399.jpg" alt="Filme 3">
-            <h3>Venom</h3>
-
+    <div id="container">
+        <h1>Cadastre-se para efetuar o aluguel do filme</h1>
+        <div class="box-geral">
+            <h4>E-mail</h4>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
         </div>
-
-        <p>
-            Em Venom, Eddie Brock (Tom Hardy) é um jornalista investigativo, que tem um quadro próprio em uma emissora
-            local.
-            Um dia, ele é escalado para entrevistar Carlton Drake (Riz Ahmed), o criador da Fundação Vida,
-            que tem investido bastante em missões espaciais de forma a encontrar possíveis usos medicinais para a
-            humanidade.
-            Após acessar um documento sigiloso enviado à sua namorada, a advogada Anne Weying (Michelle Williams), Brock
-            descobre que Drake tem feito experimentos científicos em humanos.
-            Ele resolve denunciar esta situação durante a entrevista, o que faz com que seja demitido.
-            Seis meses depois, o ainda desempregado Brock é procurado pela dra. Dora Skirth (Jenny Slate)
-            com uma denúncia: Drake estaria usando simbiontes alienígenas em testes com humanos, muitos deles mortos
-            como cobaias.
-        </p>
-
-        <div id="locar">
-            <a href="./final.html" target="blank"><button>Alugar Filme</button></a>
+        <div class="box-media">
+            <h4>Nome</h4>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome">
         </div>
-
-    </section>
-
-
-    <footer>
-        <div class="social-media">
-            <p>@HolzFilms<i data-feather="instagram"></i></p>
-            <p>Holz Films<i data-feather="facebook"></i></p>
-            <p>@HolzFilms<i data-feather="twitter"></i></p>
-            <p>Endereço: Rua dos Alfineiros, Nº 1021</p>
-            <p>E-mail: holzfilms@gmail.com</p>
-            <p>Telefone: (47)98826-4472</p>
+        <div class="box-media">
+            <h4>Sobrenome</h4>
+            <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
         </div>
-    </footer>
-
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-        feather.replace()
-    </script>
+        <div class="box-media">
+            <h4>Senha</h4>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha">
+        </div>
+        <div class="box-media">
+            <h4>Confirmação de senha</h4>
+            <input type="password" name="passconfirmation" id="passwordconfirmation"
+                placeholder="Digite novamente sua senha">
+        </div>
+        <div class="box-geral">
+            <input id="btn-submit" type="submit" value="Registrar">
+        </div>
+    </div>
 </body>
 
 </html>
